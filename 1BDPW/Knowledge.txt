@@ -4,3 +4,4 @@ Pendalaman HTML
 
 Pendalaman CSS
 > ID Selector, Attribute : 1. Attribute selector
+> Combinators : +, >, ~
