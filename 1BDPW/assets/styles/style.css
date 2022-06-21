@@ -95,3 +95,12 @@ footer {
     text-align: center;
     font-weight: bold;
 }
+
+
+@media screen and (max-width: 1000px) {
+    #content,
+    aside {
+        width: 100%;
+        padding: 0;
+    }
+}
