@@ -1,3 +1,8 @@
+INFO
+Mencari kesalahan CSS : http://csslint.net/
+Mengecilkan ukuran CSS : https://www.toptal.com/developers/cssminifier/
+
+
 Pendalaman HTML
 > Teks Terformat : 1.blockquote, 2.pre, 3.figure
 > Citation, Defining Terms : 1.cite, 2.dfn, 3.sub - sup, 4.mark

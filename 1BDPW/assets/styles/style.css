@@ -10,16 +10,6 @@ body {
     padding: 0;
 }
 
-nav a {
-    font-size: 18px;
-    font-weight: 400;
-    text-decoration: none;
-}
-
-nav a:hover {
-    font-weight: bold;
-}
-
 main {
     padding: 20px;
     overflow: auto;
@@ -65,6 +55,8 @@ aside {
 nav {
     background-color: #00a2c6;
     padding: 5px;
+    position: sticky;
+    top: 0;
 }
 
 nav li {
@@ -80,8 +72,16 @@ nav a {
     color: white;
 }
 
+nav a:hover {
+    font-weight: bold;
+}
+
 h2, h3 {
     color: #00a2c6;
+}
+
+header {
+    display: inline;
 }
 
 .profile header {
