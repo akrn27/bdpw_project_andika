@@ -22,7 +22,11 @@ function clearCalculator() {
 }
 
 function inputDigit(digit) {
+    if(calculator.displayNumber === '0'){
+        calculator.displayNumber = digit;
+    } else {
     calculator.displayNumber += digit;
+    }
 }
 
 const buttons = document.querySelectorAll('.button');
