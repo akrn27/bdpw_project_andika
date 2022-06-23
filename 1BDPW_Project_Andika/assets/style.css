@@ -1,0 +1,112 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: sans-serif;
+}
+
+header {
+    width: 100%;
+    background-image: url('./img/1jumbotron.jpg');
+    position: fixed;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+nav ul {
+    display: flex;
+    justify-content: space-around;
+}
+
+nav ul li {
+    list-style: none;
+    margin: 0 10px 0 2px;
+    padding: 13px;
+    font-size: 1.2em;
+    color: white;
+}
+
+nav ul li:hover {
+    font-weight: bold;
+}
+
+
+main .jumbotron {
+    width: 100%;
+    height: 100vh;
+    /* Parallax */
+    background-image: url('./img/1jumbotron.jpg');
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+main .jumbotron .content {
+    text-align: center;
+}
+
+main h1 {
+    margin: 40px 0 0 0;
+    text-align: center;
+}
+
+main .cards {
+    display: flex;
+    width: 100%;
+    text-align: center;
+    justify-content: center;
+}
+
+main .cards .card img {
+    width: 50%;
+}
+
+
+main .content article {
+    margin: 40px 10px;
+    text-align: justify;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    padding: 10px;
+    box-sizing: border-box;
+    border-radius: 10px;
+}
+
+main aside {
+    width: 100%;
+    text-align: center;
+    margin: 40px 0 0 0;
+    display: none;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+main aside h1 {
+    margin: 0 0 10px 0;
+}
+
+main aside img {
+    width: 50%;
+}
+
+
+@media screen and (min-width: 720px) {
+    main .content {
+        width: 65%;
+        float: left;
+    }
+
+    main aside {
+        width: 35%;
+        float: right;
+        display: inline;
+    }
+}
