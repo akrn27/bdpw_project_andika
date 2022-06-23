@@ -5,7 +5,7 @@
 }
 
 html {
-    /* scroll-behavior: smooth; */
+    scroll-behavior: smooth;
 }
 
 body {
@@ -185,6 +185,9 @@ footer {
     display: flex;
     justify-content: center;
     align-items: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
 }
 .contact .contact-jumbotron h1 {
     letter-spacing: 10px;
@@ -204,6 +207,12 @@ footer {
 }
 .contact .form form input {
     padding: 10px;
+    margin: 10px;
+}
+.contact .form form button {
+    padding: 10px;
+    background-color: black;
+    color: white;
     margin: 10px;
 }
 .contact .form img {
