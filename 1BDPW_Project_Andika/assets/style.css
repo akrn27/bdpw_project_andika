@@ -4,6 +4,10 @@
     box-sizing: border-box;
 }
 
+html {
+    /* scroll-behavior: smooth; */
+}
+
 body {
     font-family: sans-serif;
 }
@@ -13,6 +17,9 @@ header {
     background-image: url('./img/1jumbotron.jpg');
     position: fixed;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    z-index: 100;
+    border-bottom-left-radius: 50% 20%;
+    border-bottom-right-radius: 50% 20%;
 }
 
 nav ul {
@@ -28,8 +35,17 @@ nav ul li {
     color: white;
 }
 
+nav ul li a {
+    text-decoration: none;
+    color: white;
+}
+
 nav ul li:hover {
     font-weight: bold;
+}
+
+main {
+    overflow: auto;
 }
 
 
@@ -38,45 +54,67 @@ main .jumbotron {
     height: 100vh;
     /* Parallax */
     background-image: url('./img/1jumbotron.jpg');
-    background-attachment: fixed;
+    /* background-attachment: fixed; */
     background-position: center;
-    background-repeat: no-repeat;
+    /* background-repeat: no-repeat; */
     background-size: cover;
 
     display: flex;
     justify-content: center;
     align-items: center;
     color: white;
+    border-bottom-left-radius: 50% 10%;
+    border-bottom-right-radius: 50% 10%;
 }
 
 main .jumbotron .content {
     text-align: center;
 }
 
-main h1 {
+main .sponsor {
+    float: left;
+    width: 100%;
+    margin: 0 0 50px 0;
+}
+
+main .sponsor h1 {
     margin: 40px 0 0 0;
     text-align: center;
 }
 
-main .cards {
+main .sponsor .cards {
     display: flex;
     width: 100%;
     text-align: center;
     justify-content: center;
 }
 
-main .cards .card img {
+main .sponsor .cards .card img {
     width: 50%;
 }
 
 
 main .content article {
     margin: 40px 10px;
-    text-align: justify;
-    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    text-align: center;
     padding: 10px;
     box-sizing: border-box;
-    border-radius: 10px;
+    font-family: 'Times New Roman', Times, serif;
+    line-height: 30px;
+    font-size: 18px;
+}
+
+main .content article h2 {
+    margin: 0 0 25px 0;
+    letter-spacing: 3px;
+}
+
+main .content article .main-p {
+    letter-spacing: 3px;
+}
+
+main .content article p {
+    margin: 0 0 20px 0;
 }
 
 main aside {
@@ -84,29 +122,126 @@ main aside {
     text-align: center;
     margin: 40px 0 0 0;
     display: none;
-    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
     padding: 10px;
-    border-radius: 10px;
 }
 
 main aside h1 {
     margin: 0 0 10px 0;
 }
 
+main aside .img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100%;
+    background-image: url('./img/1bg.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    border-radius: 10px;
+}
+
 main aside img {
+    width: 40%;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    border-radius: 10px;
+    filter: grayscale(100%);
+}
+
+footer {
+    padding: 25px;
+    background-image: url('./img/1jumbotron.jpg');
+    color: white;
+    font-weight: bold;
+    text-align: center;
+    letter-spacing: 2px;
+}
+
+.cursor {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: rgb(161, 247, 255);
+    border-radius: 50px;
+    padding: 10px;
+    z-index: 100;
+}
+
+.cursor a {
+    text-decoration: none;
+}
+
+.contact {
+    float: left;
+    width: 100%;
+}
+
+.contact .contact-jumbotron {
+    background-image: url('./img/contact.jpg');
+    height: 70vh;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.contact .contact-jumbotron h1 {
+    letter-spacing: 10px;
+    color: white;
+}
+
+.contact .form {
+    display: flex;
+    padding: 10px;
+    margin: 50px 0 0 0;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.contact .form form {
+    display: flex;
+    flex-direction: column;
+}
+.contact .form form input {
+    padding: 10px;
+    margin: 10px;
+}
+.contact .form img {
     width: 50%;
+    border-radius: 20px;
 }
 
 
 @media screen and (min-width: 720px) {
     main .content {
-        width: 65%;
+        width: 50%;
         float: left;
+        margin: 50px 0 0 0;
     }
 
     main aside {
-        width: 35%;
+        width: 50%;
         float: right;
         display: inline;
+    }
+}
+
+@media screen and (min-width: 860px) {
+    main aside img {
+        width: 70%;
+    }
+
+    .contact {
+        margin: 50px 0 0 0;
+    }
+}
+
+@media screen and (min-width: 960px) {
+    main .content {
+        margin: 70px 0 0 0;
+    }
+
+    main aside img {
+        width: 50%;
     }
 }
